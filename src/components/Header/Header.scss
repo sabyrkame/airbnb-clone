@@ -1,19 +1,23 @@
 @use '../../styles/media.scss' as *;
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  column-gap: 24px;
-  min-height: 80px;
+  border-bottom: var(--border);
 
-  @include mobile {
-    flex-wrap: wrap;
-    justify-content: center;
-    row-gap: 12px;
-    padding-top: 16px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 24px;
+    min-height: 80px;
+
+    @include mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 12px;
+      padding-top: 16px;
+    }
   }
-
+  
   &__menu {
     position: absolute;
     left: 50%;
