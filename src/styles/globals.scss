@@ -1,0 +1,27 @@
+body {
+  font-family: var(--font-family-base);
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  color: inherit;
+
+  &:hover {
+    color: var(--color-accent);
+  }
+
+  &[class] {
+    text-decoration: none;
+  }
+}
