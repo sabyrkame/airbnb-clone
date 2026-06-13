@@ -1,0 +1,21 @@
+:root {
+  --color-white: #fff;
+  --color-black: #222;
+  --color-gray: #717171;
+  --color-gray-light: #ddd;
+  --color-accent: #ff385c;
+
+  --border: 1px solid var(--color-gray-light);
+
+  --border-radius: 40px;
+  --border-radius-small: 40px;
+
+  --shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+
+  --font-family-base: 'Roboto', sans-serif;
+
+  --container-width: 1280px;
+  --container-padding-x: 16px;
+
+  --transition-duration: 0.2s;
+}
