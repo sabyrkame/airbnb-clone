@@ -1,0 +1,151 @@
+@use '../../styles/media.scss' as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 24px;
+  min-height: 80px;
+
+  @include mobile {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 12px;
+    padding-top: 16px;
+  }
+
+  &__menu {
+    padding: 8px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+
+    @include tablet {
+      order: 1;
+      padding: 6px;
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child)::after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 24px;
+        background-color: var(--color-gray-light);
+      }
+    }
+
+    &-link {
+      padding-inline: 16px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 157%;
+      color: var(--color-black);
+
+      @include tablet {
+        padding-inline: 12px;
+      }
+
+      &:not(:last-child) {
+        font-weight: 400;
+        color: var(--color-gray);
+
+        &:hover {
+          color: var(--color-accent);
+        }
+      }
+    }
+
+    &-search-button {
+      width: 32px;
+      height: 32px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--color-accent);
+      border: none;
+      border-radius: 50%;
+
+      &:hover {
+        scale: 1.1;
+      }
+
+      &:active {
+        scale: 1;
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+
+  &__button {
+    padding: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 129%;
+    color: var(--color-black);
+    background-color: transparent;
+    border: none;
+    border-radius: var(--border-radius-small);
+
+    &:hover {
+      color: var(--color-white);
+      background-color: var(--color-accent);
+      scale: 1.05;
+    }
+
+    &:active {
+      scale: 1;
+    }
+  }
+
+  &__lang-button {
+    padding: 12px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+
+    &:hover {
+      scale: 1.2;
+    }
+
+    &:active {
+      scale: 1;
+    }
+  }
+
+  &__profile {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding: 6px 6px 6px 12px;
+    border: var(--border);
+    border-radius: var(--border-radius-small);
+
+    &-nav {
+      padding: 0;
+      background-color: transparent;
+      border: none;
+
+      &:hover {
+        scale: 1.2;
+      }
+
+      &:active {
+        scale: 1;
+      }
+    }
+  }
+}
