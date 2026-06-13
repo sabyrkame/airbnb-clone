@@ -103,7 +103,8 @@
     &:hover {
       color: var(--color-white);
       background-color: var(--color-accent);
-      scale: 1.05;
+      box-shadow: var(--shadow);
+      scale: 1.02;
     }
 
     &:active {
@@ -118,7 +119,8 @@
     border-radius: 50%;
 
     &:hover {
-      scale: 1.2;
+      scale: 1.1;
+      box-shadow: var(--shadow);
     }
 
     &:active {
@@ -140,7 +142,7 @@
       border: none;
 
       &:hover {
-        scale: 1.2;
+        scale: 1.1;
       }
 
       &:active {
