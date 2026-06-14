@@ -46,7 +46,7 @@
         display: block;
         width: 1px;
         height: 24px;
-        background-color: var(--color-gray-light);
+        background-color: var(--color-light-gray);
       }
     }
 
@@ -55,7 +55,7 @@
       font-weight: 600;
       font-size: 14px;
       line-height: 157%;
-      color: var(--color-black);
+      color: var(--color-dark);
 
       @include tablet {
         padding-inline: 12px;
@@ -63,7 +63,7 @@
 
       &:not(:last-child) {
         font-weight: 400;
-        color: var(--color-gray);
+        color: var(--color-dark-gray);
 
         &:hover {
           color: var(--color-accent);
@@ -102,13 +102,13 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 129%;
-    color: var(--color-black);
+    color: var(--color-dark);
     background-color: transparent;
     border: none;
     border-radius: var(--border-radius-small);
 
     &:hover {
-      color: var(--color-white);
+      color: var(--color-light);
       background-color: var(--color-accent);
       box-shadow: var(--shadow);
       scale: 1.02;
