@@ -1,11 +1,12 @@
 :root {
-  --color-white: #fff;
-  --color-black: #222;
-  --color-gray: #717171;
-  --color-gray-light: #ddd;
+  --color-light: #fff;
+  --color-dark: #222;
+  --color-gray: #b0b0b0;
+  --color-light-gray: #ddd;
+  --color-dark-gray: #717171;
   --color-accent: #ff385c;
 
-  --border: 1px solid var(--color-gray-light);
+  --border: 1px solid var(--color-light-gray);
 
   --border-radius: 40px;
   --border-radius-small: 20px;
